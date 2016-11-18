@@ -1,9 +1,16 @@
 {
     "name": "shenmadouyaowen/flarum-hello-world",
-    "description": "Say hello to the world!",
     "type": "flarum-extension",
-    "keywords": ["discussion"],
+    "description": "hello word.",
+    "keywords": ["locale"],
     "license": "MIT",
+    "version": "v0.1.0-beta.6",
+    "authors": [
+        {
+            "name": "shenmadouyaowen",
+            "email": "shenmadouyao@163.com"
+        }
+    ],
     "support": {
         "source": "https://github.com/shenmadouyaowen/flarum-hello-world"
     },
@@ -11,16 +18,17 @@
         "flarum/core": "^0.1.0-beta.6"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        },
         "flarum-extension": {
-            "title": "world",
+            "title": "hello word",
             "icon": {
-                "name": "at",
-                "backgroundColor": "#533EC1",
-                "color": "#fff"
+                "backgroundColor": "#DE2910",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
             }
+        },
+        "flarum-locale": {
+            "code": "zh",
+            "title": "hello word"
         }
     }
 }
