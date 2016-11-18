@@ -1,5 +1,5 @@
 {
-    "name": "shenmadouyao/flarum-hello-world",
+    "name": "shenmadouyaowen/flarum-hello-world",
     "description": "Say hello to the world!",
     "type": "flarum-extension",
     "require": {
