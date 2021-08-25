@@ -1,0 +1,99 @@
+{
+  "name": "elecV2P 定时任务订阅",
+  "author": "留个名字",
+  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-08-25 15:02:02",
+  "list": [
+    {
+      "name": "中青签到",
+      "type": "cron",
+      "time": "15 7 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqqd.js"
+      }
+    },
+    {
+      "name": "中青文章",
+      "type": "cron",
+      "time": "30 7,12,18 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js"
+      }
+    },
+    {
+      "name": "中青看看赚",
+      "type": "cron",
+      "time": "9 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqkkz.js"
+      }
+    },
+    {
+      "name": "中青火爆转发",
+      "type": "cron",
+      "time": "15 6,12,18 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_share.js"
+      }
+    },
+    {
+      "name": "中青福利视频",
+      "type": "cron",
+      "time": "20 21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_Adv_video.js"
+      }
+    },
+    {
+      "name": "中青每日任务宝箱领取",
+      "type": "cron",
+      "time": "15 22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqbox.js"
+      }
+    },
+    {
+      "name": "中青每日收益统计",
+      "type": "cron",
+      "time": "15 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_today_score.js"
+      }
+    },
+    {
+      "name": "中青自动提现",
+      "type": "cron",
+      "time": "25 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_withdraw.js"
+      },
+      "running": false
+    },
+    {
+      "name": "打卡赚",
+      "type": "cron",
+      "time": "25 6,10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqllz.js"
+      }
+    },
+    {
+      "name": "搜索赚",
+      "type": "cron",
+      "time": "25 8 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqssz.js"
+      }
+    }
+  ]
+}
